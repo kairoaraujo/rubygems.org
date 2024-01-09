@@ -30,18 +30,18 @@ Hosting is donated by [Amazon Web Services](https://aws.amazon.com), with CDN se
 
 Please follow our [contribution guidelines][].
 
-[contribution guidelines]: https://github.com/rubygems/rubygems.org/blob/master/CONTRIBUTING.md
+[contribution guidelines]: https://github.com/rubygems/rubygems.org/blob/main/CONTRIBUTING.md
 
 To get setup, please check out the [Development Setup][].
 
-[development setup]: https://github.com/rubygems/rubygems.org/blob/master/CONTRIBUTING.md#development-setup
+[development setup]: https://github.com/rubygems/rubygems.org/blob/main/CONTRIBUTING.md#development-setup
 
 Our deployment process is documented on the wiki as well, there's a multi-step
 [Checklist][] to run through.
 
 [checklist]: https://github.com/rubygems/rubygems-infrastructure/wiki/Deploys
 
-Also please take note of our [Code of Conduct](https://github.com/rubygems/rubygems.org/blob/master/CODE_OF_CONDUCT.md).
+Also please take note of our [Code of Conduct](https://github.com/rubygems/rubygems.org/blob/main/CODE_OF_CONDUCT.md).
 
 If you have any trouble or questions getting set up please create an issue on this repository and we'll be happy to help!
 
@@ -57,4 +57,4 @@ RubyGems.org consists of a few major parts:
 
 RubyGems.org uses the MIT license. Please check the [LICENSE][] file for more details.
 
-[license]: https://github.com/rubygems/rubygems.org/blob/master/MIT-LICENSE
+[license]: https://github.com/rubygems/rubygems.org/blob/main/MIT-LICENSE

@@ -9,7 +9,7 @@ How To Contribute
 * Follow the steps described in [Development Setup](#development-setup)
 * Create a topic branch: `git checkout -b awesome_feature`
 * Commit your changes
-* Keep up to date: `git fetch && git rebase origin/master`
+* Keep up to date: `git fetch && git rebase origin/main`
 
 Once you’re ready:
 
@@ -39,7 +39,7 @@ Branching
 For your own development, use the topic branches. Basically, cut each
 feature into its own branch and send pull requests based off those.
 
-The master branch is the main production branch. **Always** should be
+The `main` branch is the main production branch. **Always** should be
 fast-forwardable.
 
 Development Setup
@@ -215,7 +215,7 @@ Database Layout
 
 Courtesy of [Rails ERD](https://voormedia.github.io/rails-erd/)
 
-![Rubygems.org Domain Model](https://cdn.rawgit.com/rubygems/rubygems.org/master/doc/erd.svg)
+![Rubygems.org Domain Model](https://cdn.rawgit.com/rubygems/rubygems.org/main/doc/erd.svg)
 
 Locales
 -------
