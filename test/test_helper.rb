@@ -74,8 +74,6 @@ Mocha.configure do |c|
   c.strict_keyword_argument_matching = true
 end
 
-Rubygem.searchkick_reindex(import: false)
-
 OmniAuth.config.test_mode = true
 
 class ActiveSupport::TestCase
@@ -84,8 +82,11 @@ class ActiveSupport::TestCase
   include EmailHelpers
   include PasswordHelpers
 
-  parallelize_setup do |_worker|
+  parallelize(workers: :number_of_processors)
+
+  parallelize_setup do |worker|
     SemanticLogger.reopen
+    Searchkick.index_suffix = "_#{worker}"
   end
 
   setup do
@@ -95,6 +96,9 @@ class ActiveSupport::TestCase
 
     Unpwn.offline = true
     OmniAuth.config.mock_auth.clear
+
+    Rubygem.reindex
+    Searchkick.disable_callbacks
 
     @launch_darkly = LaunchDarkly::Integrations::TestData.data_source
     config = LaunchDarkly::Config.new(data_source: @launch_darkly, send_events: false)
